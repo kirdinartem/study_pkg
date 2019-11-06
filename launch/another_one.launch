@@ -1,0 +1,8 @@
+<launch>
+	<arg name="new_topic_name" default="new_chatter" />
+    <group ns="my_ns">	
+    	<node name="listener_cpp" pkg="roscpp_tutorials" type="listener" output="screen">
+    		<remap from="chatter" to="$(arg new_topic_name)"/>
+    	</node>
+    </group>
+</launch>

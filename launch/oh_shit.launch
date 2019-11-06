@@ -1,0 +1,4 @@
+<launch>
+	<node name="talker_to_new_msg" pkg="study_pkg" type="test_my_msg.py" output="screen" >
+	</node>
+</launch>

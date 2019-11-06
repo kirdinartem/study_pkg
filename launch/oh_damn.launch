@@ -1,0 +1,4 @@
+<launch>
+	<node name="my_talker_cpp" pkg="study_pkg" type="my_talker_cpp" output="screen" />
+
+</launch>

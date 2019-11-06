@@ -1,0 +1,12 @@
+<launch>
+	<group ns="my_ns">
+		<node name="talker_cpp" pkg="study_pkg" type="talker_cpp" output="screen" >
+			<remap from="cpp_chatter" to="my_chatter" />
+		</node>
+
+		<node name="listener" pkg="study_pkg" type="listener.py" output="screen" >
+			<remap from="my_chat_topic" to="my_chatter" />
+		</node>
+	</group>
+</launch>
+
